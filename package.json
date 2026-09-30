@@ -1,0 +1,25 @@
+{
+  "name": "what-was-i-doing",
+  "version": "0.1.0",
+  "description": "A local comeback card for the project you abandoned.",
+  "type": "module",
+  "author": "anigmea",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": "./src/index.js",
+  "bin": {
+    "what-was-i-doing": "./src/cli.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "prepublishOnly": "npm test"
+  }
+}
